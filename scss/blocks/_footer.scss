@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
+
+    @include vp-1023{
+      gap: 30px;
+    }
   }
 
   &__col-base {
@@ -14,12 +18,20 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
+    
+    @include vp-1023{
+      width: 228px;
+    }
   }
 
   &__col-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include vp-1023{
+      max-width: 470px;
+    }
   }
 
   &__logo-link {
@@ -30,6 +42,11 @@
   &__logo {
     width: 114px;
     height: 26px;
+
+    @include vp-1023{
+      width: 105px;
+      height: 24px;
+    }
   }
 
   &__contacts {
@@ -41,18 +58,33 @@
   &__contacts-mail {
     font-size: 16px;
     line-height: 24px;
+
+    @include vp-1023{
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__contacts-tel {
     font-size: 22px;
     line-height: 24px;
     letter-spacing: -0.02em;
+
+    @include vp-1023{
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 
   &__nav {
     display: flex;
     gap: 120px;
     margin: 0 0 0 auto;
+
+    @include vp-1023{
+      max-width: 470px;
+      gap: 30px;
+    }
   }
 
   &__nav-list {
@@ -70,6 +102,11 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+
+    @include vp-1023{
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__legal {
@@ -79,6 +116,11 @@
     font-weight: 400;
     line-height: 16px;
     color: $color-white-50;
+
+    @include vp-1023{
+      font-size: 10px;
+      line-height: 14px;
+    }
   }
 }
 

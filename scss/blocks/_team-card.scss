@@ -7,6 +7,11 @@
   border-radius: 20px;
   min-height: 463px;
 
+  @include vp-1023{
+    min-height: 373px;
+  }
+
+
   &__job-title {
     font-size: 14px;
     line-height: 18px;
@@ -33,6 +38,10 @@
     width: 220px;
     height: 100%;
     border-radius: 12px;
+
+    @include vp-1023{
+      height: 240px;
+    }
   }
 
   &__inner {
@@ -60,6 +69,11 @@
     font-size: 14px;
     line-height: 18px;
     text-align: right;
+
+    @include vp-1023{
+      margin-bottom: 40px;
+      max-width: 300px;
+    }
   }
 
   &--center &__description {
@@ -71,6 +85,10 @@
     flex-wrap: wrap;
     gap: 10px;
     margin: auto 0 0 0;
+
+    @include vp-1023{
+      justify-content: right;
+    }
   }
 
   &__link {

@@ -12,6 +12,19 @@
     background-image: url("../../images/banner@2x.jpg");
   }
 
+  @include vp-1023{
+    max-width: 728px;
+    max-height: 280px;
+    margin-bottom: 80px;
+    flex-direction: column;
+    justify-content: center;  
+    background-image: url("../../images/banner-table.jpg");
+  }
+
+  @media (min-resolution:2dppx) and (max-width:$vp-tablet){
+    background-image:url("../../images/banner-table@2x.png");
+  }
+
   &__title {
     margin: 0 40px 0 0;
     font-size: 44px;
@@ -19,11 +32,24 @@
     line-height: 48px;
     color: $color-white;
     text-transform: uppercase;
+
+    @include vp-1023{
+      margin: 0 0 20px;
+      font-size: 36px;
+      line-height: 40px;
+    }
   }
 
   &__inner {
     max-width: 460px;
     margin: 0 0 0 auto;
+
+    @include vp-1023{
+      max-width: 520px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -32,6 +58,11 @@
     line-height: 22px;
     color: $color-white;
     text-align: right;
+    
+    @include vp-1023{
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
 
   &__link {
@@ -45,5 +76,9 @@
     text-align: center;
     background-color: $color-ecru-white;
     border-radius: 40px;
+
+    @include vp-1023{
+      margin: 0 auto;
+    }
   }
 }
