@@ -29,12 +29,24 @@
       margin: 0;
       gap: 32px;
     }
+
+    @include vp-767{
+      gap: 24px;
+    }
   }
 
   &__link {
     display: flex;
     color: $color-trout;
 
+    &:hover{
+      color:$color-ecru-white;
+    }
+
+    &:focus-visible{
+      outline: none;
+      color:$color-ecru-white;
+    }
   }
 
 }

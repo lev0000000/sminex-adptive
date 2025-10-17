@@ -161,10 +161,33 @@
       line-height: 14px;
       padding: 10px;
     }
+
+    &:hover{
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    &:focus-visible{
+      outline: none;
+      text-decoration: underline;
+    }
     
   }
 
   &__link--secondary {
     background-color: $color-ecru-white;
+
+    &:hover{
+      text-decoration: none;
+      background-color:$color-chrome-white;
+      color:$color-blue-charcoa
+    }
+
+    &:focus-visible{
+      outline: none;
+      text-decoration: none;
+      background-color:$color-chrome-white;
+      color:$color-blue-charcoa
+    }
   }
 }

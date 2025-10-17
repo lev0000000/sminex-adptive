@@ -6,7 +6,7 @@
     background: none;
     color: #1D252D;
 
-    @include vp-1023{
+    @include vp-1023 {
       padding: 0;
     }
   }
@@ -91,14 +91,14 @@
       margin: 0 auto;
     }
   }
-  
+
 
   &--error-blocks &__contacts {
     margin: 0 auto;
     flex-direction: row;
     gap: 32px;
 
-    @include vp-1023{
+    @include vp-1023 {
       gap: 20px;
     }
   }
@@ -136,9 +136,14 @@
 
   &--error-blocks &__contacts-mail,
   &--error-blocks &__contacts-tel {
-    color: #1D252D;
-    font-size: 14px;
-    line-height: 18px;
+      color: #1D252D;
+      font-size: 14px;
+      line-height: 18px;
+
+    @include vp-767{
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__nav {
@@ -194,6 +199,15 @@
     @include vp-1023 {
       font-size: 14px;
       line-height: 18px;
+    }
+
+    &:hover{
+      color:$color-ecru-white;
+    }
+
+    &:focus-visible{
+      outline: none;
+      color:$color-ecru-white;
     }
 
 

@@ -477,6 +477,11 @@ a {
     padding: 166px 0 188px;
   }
 }
+@media (max-width: 767px) {
+  .page-content--error-blocks {
+    padding: 157px 0 183px;
+  }
+}
 .page-content__title {
   max-width: 840px;
   margin: 0 auto 60px;
@@ -531,6 +536,11 @@ a {
     max-width: 528px;
   }
 }
+@media (max-width: 767px) {
+  .error-blocks {
+    max-width: 295px;
+  }
+}
 .error-blocks__heading {
   font-weight: 200;
   font-size: 32px;
@@ -545,6 +555,12 @@ a {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 767px) {
+  .error-blocks__heading {
+    font-size: 26px;
+    line-height: 24px;
+  }
+}
 .error-blocks__desc {
   font-size: 16px;
   line-height: 22px;
@@ -556,6 +572,18 @@ a {
   .error-blocks__desc {
     width: 100%;
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .error-blocks__desc {
+    font-size: 14px;
+    line-height: 18px;
+    width: 295px;
+  }
+}
+@media (max-width: 767px) {
+  .error-blocks__desc-span {
+    display: block;
   }
 }
 
@@ -914,6 +942,12 @@ a {
   font-size: 14px;
   line-height: 18px;
 }
+@media (max-width: 767px) {
+  .footer--error-blocks .footer__contacts-mail, .footer--error-blocks .footer__contacts-tel {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 .footer__nav {
   display: flex;
   gap: 120px;
@@ -967,6 +1001,13 @@ a {
     font-size: 14px;
     line-height: 18px;
   }
+}
+.footer__nav-link:hover {
+  color: #d6d2c4;
+}
+.footer__nav-link:focus-visible {
+  outline: none;
+  color: #d6d2c4;
 }
 .footer__legal {
   max-width: 680px;
@@ -1181,8 +1222,27 @@ a {
     padding: 10px;
   }
 }
+.team-card__link:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+.team-card__link:focus-visible {
+  outline: none;
+  text-decoration: underline;
+}
 .team-card__link--secondary {
   background-color: #d6d2c4;
+}
+.team-card__link--secondary:hover {
+  text-decoration: none;
+  background-color: #cdc8b6;
+  color: #1d252d;
+}
+.team-card__link--secondary:focus-visible {
+  outline: none;
+  text-decoration: none;
+  background-color: #cdc8b6;
+  color: #1d252d;
 }
 
 .socials {
@@ -1221,7 +1281,19 @@ a {
     gap: 32px;
   }
 }
+@media (max-width: 767px) {
+  .socials--error-blocks {
+    gap: 24px;
+  }
+}
 .socials__link {
   display: flex;
   color: #4a5157;
+}
+.socials__link:hover {
+  color: #d6d2c4;
+}
+.socials__link:focus-visible {
+  outline: none;
+  color: #d6d2c4;
 }/*# sourceMappingURL=style.css.map */
